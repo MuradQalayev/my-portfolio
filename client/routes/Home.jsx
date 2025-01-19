@@ -6,7 +6,7 @@ import About from './About';
 import Motivation from './Motivation';
 import ComingSoon from '../public/coming soon.json'
 import Projects from './Projects';
-import Footer from './Footer';
+import Education from './Education';
 
 
 
@@ -42,6 +42,9 @@ const Home = () => {
 
       <div id='about' className='about-section'>
         <About/>
+      </div>
+      <div id='education'>
+        <Education/>
       </div>
       <div id='motivation' className='motivation-section'>
         <Motivation/>

@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import '../src/Projects.css';
 
 const Projects = () => {
-  // Track which panel is open
   const [openProject, setOpenProject] = useState(null);
 
-  // Toggle function for collapse
   const handleToggle = (project) => {
     setOpenProject(openProject === project ? null : project);
   };
@@ -15,7 +13,6 @@ const Projects = () => {
 <h2 className="text-center">{ "{ Some of the contributed projects }" }</h2>
 
       <div id="accordion">
-        {/* Project 1 */}
         <div className="card">
           <div className="card-header">
             <h5 className="mb-0">
@@ -193,9 +190,48 @@ const Projects = () => {
               </div>
             </div>
           </div>
-        </div> 
+        </div>   
+        <div className="card">
+          <div className="card-header">
+            <h5 className="mb-0">
+              <button className="btn btn-link project-btn" onClick={() => handleToggle(5)}>
+              <i class="bi bi-rocket-takeoff-fill"></i> Project #5 My Portfolio
+              </button>
+            </h5>
+          </div>
 
-      </div> 
+          <div className={`collapse-content ${openProject === 5 ? 'open' : ''}`}>
+            <div className="card-body">
+              <div className="project-content">
+                <img 
+                  src="/portfolio.png" 
+                  alt="My portfoli project" 
+                  className="project-image"
+                />
+
+                <p className="project-description">
+                  My portfolio
+                </p>
+
+                <ul>
+                  <li>Murad Galayev</li>
+                </ul>
+
+                <a 
+                  href="https://github.com/MuradQalayev/my-portfolio" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  <i className="bi bi-git"></i> Source code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>       
+
+      </div>
+      
     </div> 
   );
 };

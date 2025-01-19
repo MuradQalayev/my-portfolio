@@ -1,19 +1,14 @@
-/* Projects.css */
-
-/* Ensure the accordion doesn't cause overflow */
 #accordion {
     width: 100%;
   }
   
-  /* Adjust card margins for better spacing */
   .card {
     margin-bottom: 20px;
-    border: none; /* Optional: Removes the default border */
+    border: none; 
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  /* Style the project buttons */
   .project-btn {
     font-size: 1.2rem;
     font-weight: bold;
@@ -30,7 +25,6 @@
     text-decoration: underline;
   }
   
-  /* Style the collapse content */
   .collapse-content {
     max-height: 0;
     overflow: hidden;
@@ -39,12 +33,11 @@
   }
   
   .collapse-content.open {
-    max-height: 1000px; /* Set to a value that accommodates the content */
+    max-height: 1000px; 
     opacity: 1;
     transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
   }
   
-  /* Style the project links */
   .project-link {
     display: inline-flex;
     align-items: center;
@@ -65,10 +58,10 @@
   }
   .project-image {
     width: 100%;
-    max-width: 200px; /* Reduced max-width for smaller images */
+    max-width: 200px; 
     height: auto;
     display: block;
-    margin: 0 auto 15px; /* Centers the image and adds bottom margin */
-    border-radius: 8px; /* Optional: Adds rounded corners */
-    object-fit: contain; /* Ensures the entire image is visible without cropping */
+    margin: 0 auto 15px; 
+    border-radius: 8px; 
+    object-fit: contain; 
   }

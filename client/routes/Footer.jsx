@@ -4,10 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Footer = () => {
   return (
     <footer className="bg-dark text-white mt-5">
-      <div className="container py-2"> {/* Reduced padding */}
+      <div className="container py-2"> 
         <div className="row">
 
-          {/* Contact Section */}
+
           <div className="col-md-4">
             <h5>Contact Me</h5>
             <p className="mb-1">Via Mario Berta 5, Torino</p>
@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
 
         </div>
-        <hr className="bg-light my-2" /> {/* Reduced margin */}
+        <hr className="bg-light my-2" /> 
         <div className="text-center">
           &copy; {new Date().getFullYear()} Murad Galayev. All rights reserved.
         </div>

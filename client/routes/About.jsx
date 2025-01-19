@@ -74,12 +74,15 @@ const About = () => {
 
             <h3>🌍 Languages</h3>
             <ul>
+            <ul>
               <li>🇬🇧 English (Fluent)</li>
               <li>🇷🇺 Russian (Native)</li>
               <li>🇹🇷 Turkish (Fluent)</li>
-              <li>it Italian (Beginner)</li>
+              <li>🇮🇹 Italian (Beginner)</li>
+              <li>🇦🇿 Azerbaijani (Native)</li>
             </ul>
 
+            </ul> 
             <p>
               Let's create something amazing together! Feel free to connect with me on 
               <a href="https://linkedin.com/in/murad-galayev-aa3b22187" target="_blank" rel="noopener noreferrer">

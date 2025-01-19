@@ -13,7 +13,7 @@
 .hi-text {
   font-size: 4rem;  
   font-weight: bold;
-  background: linear-gradient(45deg, #ff5733, #ffbd33, #33ff57, #3380ff); /* ✅ Colorful Gradient */
+  background: linear-gradient(45deg, #ff5733, #ffbd33, #33ff57, #3380ff); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
