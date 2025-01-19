@@ -1,0 +1,49 @@
+/* Main container with animation */
+.about-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full-screen height */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Background Lottie Animation */
+  .about-lottie {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none; /* Allows interaction with content */
+  }
+  
+  /* Foreground Content */
+  .about-content {
+    position: absolute;
+    z-index: 2; /* Ensures text appears over the animation */
+    color: white;
+    text-align: center;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  /* Profile Photo */
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+  }
+  
+  /* Name Highlight */
+  .name-highlight {
+    color: #ffcc00;
+    font-weight: bold;
+  }
+  
