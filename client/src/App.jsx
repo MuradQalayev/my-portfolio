@@ -3,6 +3,8 @@
   import Lottie from 'lottie-react';
   import 'bootstrap/dist/css/bootstrap.min.css';
   import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+
   import Home from '../routes/Home';
   import Navibar from '../routes/Navbar';
   import maintenance from '../public/maintenance.json'

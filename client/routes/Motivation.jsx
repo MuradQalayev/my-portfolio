@@ -20,7 +20,6 @@ const Motivation = () => {
       {images.map((img, index) => (
         <img key={index} src={img} alt="Smoki" className={`bubble bubble-${index}`} />
       ))}
-      <h1 className="motivation-text">Smoki, the most adorable cat! 🐱💖</h1>
     </div>
     </Container>
 

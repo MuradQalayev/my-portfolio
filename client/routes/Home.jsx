@@ -5,6 +5,7 @@ import homePageAnimation from '../public/frontend.json';
 import About from './About';
 import Motivation from './Motivation';
 import ComingSoon from '../public/coming soon.json'
+import Projects from './Projects';
 
 
 const Home = () => {
@@ -44,6 +45,9 @@ const Home = () => {
         <Motivation/>
       </div>
       <Lottie className='d-flex justify-content-center ' loop={true} animationData={ComingSoon}/>
+      <div id='projects' className='projects'>
+        <Projects/>
+      </div>
     </div>
   );
 };
