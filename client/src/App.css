@@ -1,0 +1,35 @@
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  background-color: #fff;  /* no quotes needed */
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.hi-text {
+  font-size: 4rem;  /* ✅ Make "Hi" Very Large */
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff5733, #ffbd33, #33ff57, #3380ff); /* ✅ Colorful Gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.name-highlight {
+  color: #ff5733; /* ✅ Highlight Name in Red-Orange */
+}
+
+.lead {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.animation-style {
+  width: 100%;
+  max-width: 500px;  /* ✅ Adjust Animation Size */
+  height: auto;
+}
