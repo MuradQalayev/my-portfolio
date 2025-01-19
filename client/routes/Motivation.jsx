@@ -1,5 +1,7 @@
 import React from 'react';
 import '../src/Motivation.css'; // Import CSS for styling
+import { Container } from 'react-bootstrap';
+
 
 const Motivation = () => {
 
@@ -11,12 +13,17 @@ const Motivation = () => {
     "/smoki5.jpg" ];
 
   return (
-    <div className="motivation-container">
+    <Container>
+      <h1>My Motivation</h1>
+      <div className="motivation-container">
+      
       {images.map((img, index) => (
         <img key={index} src={img} alt="Smoki" className={`bubble bubble-${index}`} />
       ))}
       <h1 className="motivation-text">Smoki, the most adorable cat! 🐱💖</h1>
     </div>
+    </Container>
+
   );
 };
 

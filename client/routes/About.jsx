@@ -31,7 +31,7 @@ const About = () => {
   return (
     <div className="about-section">
       <Container className="about-content">
-        <h1 className="text-center mb-4">About Me</h1>
+        <h1 className="text-left mb-4">About Me</h1>
 
         <Row className="align-items-center">
           <Col xs={12} md={4} className="text-center mb-4 mb-md-0">

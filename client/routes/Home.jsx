@@ -43,7 +43,7 @@ const Home = () => {
       <div id='motivation' className='motivation-section'>
         <Motivation/>
       </div>
-      <Lottie className='d-flex justify-content-center ' loop={false} animationData={ComingSoon}/>
+      <Lottie className='d-flex justify-content-center ' loop={true} animationData={ComingSoon}/>
     </div>
   );
 };
