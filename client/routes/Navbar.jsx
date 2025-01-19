@@ -10,7 +10,15 @@ const Navibar = () => {
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
     }
-    setToggleClicked(false); // Close the navbar after clicking
+    setToggleClicked(false); 
+  };
+  const handleScrollToMotivation = (event) => {
+    event.preventDefault();
+    const aboutSection = document.getElementById('motivation');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    setToggleClicked(false);
   };
 
   return (
@@ -27,8 +35,13 @@ const Navibar = () => {
 
         <Navbar.Collapse id="basic-navbar-nav" in={toggleClicked}>
           <Nav className="ms-auto">
-            <Nav.Link href="#about" onClick={handleScrollToAbout} className="d-flex justify-content-end">
+            <Nav.Link href="#about" onClick={handleScrollToAbout} className="d-flex justify-content-center align-items-center"
+            >
               About
+            </Nav.Link>
+            <Nav.Link href="#motivation" onClick={handleScrollToMotivation} className="d-flex justify-content-center align-items-center"
+            >
+              My motivation!
             </Nav.Link>
             <Nav.Link href="https://github.com/MuradQalayev" target="_blank">
               <i className="bi bi-github" style={{ fontSize: '1.5rem' }}></i> {toggleClicked ? 'GitHub' : ''}

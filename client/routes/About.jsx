@@ -14,7 +14,7 @@ const About = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.5 } // Trigger when 50% of the image is in view
+      { threshold: 0.5 } 
     );
 
     if (imageRef.current) {
@@ -37,9 +37,9 @@ const About = () => {
           <Col xs={12} md={4} className="text-center mb-4 mb-md-0">
             <Image
               ref={imageRef}
-              src="/22.jpg" // Directly reference image
+              src="/22.jpg"
               alt="Murad Galayev"
-              className={`profile-photo ${isVisible ? 'animate-image' : ''}`} // Add animation class when visible
+              className={`profile-photo ${isVisible ? 'animate-image' : ''}`}
               roundedCircle
               fluid
             />

@@ -3,6 +3,8 @@ import Lottie from 'lottie-react';
 import '../src/App.css'; 
 import homePageAnimation from '../public/frontend.json';
 import About from './About';
+import Motivation from './Motivation';
+
 
 const Home = () => {
 
@@ -37,7 +39,9 @@ const Home = () => {
       <div id='about' className='about-section'>
         <About/>
       </div>
-
+      <div id='motivation' className='motivation-section'>
+        <Motivation/>
+      </div>
     </div>
   );
 };
