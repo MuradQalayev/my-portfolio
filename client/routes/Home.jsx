@@ -4,6 +4,7 @@ import '../src/App.css';
 import homePageAnimation from '../public/frontend.json';
 import About from './About';
 import Motivation from './Motivation';
+import ComingSoon from '../public/coming soon.json'
 
 
 const Home = () => {
@@ -42,6 +43,7 @@ const Home = () => {
       <div id='motivation' className='motivation-section'>
         <Motivation/>
       </div>
+      <Lottie className='d-flex justify-content-center ' loop={false} animationData={ComingSoon}/>
     </div>
   );
 };
