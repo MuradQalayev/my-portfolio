@@ -63,3 +63,28 @@ a:hover {
     height: 150px;
   }
 }
+
+.about-section {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.profile-photo.animate-image {
+  transform: scale(1.1);
+}
+
+.certificates-carousel {
+  width: 250px;
+  margin: auto;
+}
+
+.certificates-carousel img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

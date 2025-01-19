@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
-
+import { Container, Row, Col, Image, Carousel } from 'react-bootstrap';
 import '../src/About.css';
 
 const About = () => {
@@ -14,7 +13,7 @@ const About = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.5 } 
+      { threshold: 0.2 } 
     );
 
     if (imageRef.current) {
@@ -31,7 +30,7 @@ const About = () => {
   return (
     <div className="about-section">
       <Container className="about-content">
-        <h1 className="text-left mb-4">About Me</h1>
+        <h1 className="text-left mb-4">{ "{ About Me }" }</h1>
 
         <Row className="align-items-center">
           <Col xs={12} md={4} className="text-center mb-4 mb-md-0">
@@ -45,7 +44,22 @@ const About = () => {
             />
           </Col>
 
-          <Col xs={12} md={8} className="about-text">
+          <Col xs={12} md={4} className="text-center">
+            <h3> Certificates</h3>
+            <Carousel className="certificates-carousel">
+              <Carousel.Item>
+                <Image src="/cert1.png" alt="Certificate 1" fluid />
+              </Carousel.Item>
+              <Carousel.Item>
+                <Image src="/cert2.png" alt="Certificate 2" fluid />
+              </Carousel.Item>
+              <Carousel.Item>
+                <Image src="/cert3.png" alt="Certificate 3" fluid />
+              </Carousel.Item>
+            </Carousel>
+          </Col>
+
+          <Col xs={12} md={4} className="about-text">
             <h2>Hello! I'm <span className="name-highlight">Murad Galayev</span></h2>
             <p>
               I’m a passionate <strong>web developer</strong> who loves building sleek,
@@ -57,6 +71,15 @@ const About = () => {
               <li>🎨 UI/UX Design & Responsive Web Design</li>
               <li>🚀 Always learning & improving!</li>
             </ul>
+
+            <h3>🌍 Languages</h3>
+            <ul>
+              <li>🇬🇧 English (Fluent)</li>
+              <li>🇷🇺 Russian (Native)</li>
+              <li>🇹🇷 Turkish (Fluent)</li>
+              <li>it Italian (Beginner)</li>
+            </ul>
+
             <p>
               Let's create something amazing together! Feel free to connect with me on 
               <a href="https://linkedin.com/in/murad-galayev-aa3b22187" target="_blank" rel="noopener noreferrer">

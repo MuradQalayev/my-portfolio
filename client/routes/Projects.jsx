@@ -12,7 +12,7 @@ const Projects = () => {
 
   return (
     <div className="container my-5">
-      <h2 className="text-center">✨ Some of the contributed projects ✨</h2>
+<h2 className="text-center">{ "{ Some of the contributed projects }" }</h2>
 
       <div id="accordion">
         {/* Project 1 */}
