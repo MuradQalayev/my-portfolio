@@ -20,6 +20,14 @@ const Navibar = () => {
     }
     setToggleClicked(false);
   };
+  const handleScrollToProjects = (event) => {
+    event.preventDefault();
+    const aboutSection = document.getElementById('projects');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    setToggleClicked(false);
+  };
 
   return (
     <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="navbar">
@@ -42,6 +50,10 @@ const Navibar = () => {
             <Nav.Link href="#motivation" onClick={handleScrollToMotivation} className="d-flex justify-content-center align-items-center"
             >
               My motivation!
+            </Nav.Link>
+            <Nav.Link href="#projects" onClick={handleScrollToProjects} className="d-flex justify-content-center align-items-center"
+            >
+              Projects
             </Nav.Link>
             <Nav.Link href="https://github.com/MuradQalayev" target="_blank">
               <i className="bi bi-github" style={{ fontSize: '1.5rem' }}></i> {toggleClicked ? 'GitHub' : ''}

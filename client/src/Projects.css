@@ -1,49 +1,74 @@
-/* Styling for the project buttons */
-.project-btn {
-    font-size: 18px;
+/* Projects.css */
+
+/* Ensure the accordion doesn't cause overflow */
+#accordion {
+    width: 100%;
+  }
+  
+  /* Adjust card margins for better spacing */
+  .card {
+    margin-bottom: 20px;
+    border: none; /* Optional: Removes the default border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the project buttons */
+  .project-btn {
+    font-size: 1.2rem;
     font-weight: bold;
-    text-decoration: none;
     color: #007bff;
-    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
   }
   
   .project-btn:hover {
     color: #0056b3;
+    text-decoration: underline;
   }
   
-  /* Collapse Section Styling */
+  /* Style the collapse content */
   .collapse-content {
     max-height: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
     transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
     opacity: 0;
   }
   
   .collapse-content.open {
-    max-height: 350px; /* Adjust as needed */
+    max-height: 1000px; /* Set to a value that accommodates the content */
     opacity: 1;
     transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
   }
   
-  /* Card Styling */
-  .card {
-    margin-bottom: 15px;
-    border-radius: 8px;
-    /* overflow: hidden; */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  .card-header {
-    background-color: #f8f9fa;
-    padding: 10px;
-  }
-  .card-body {
-    padding: 15px;
-    background-color: #ffffff;
-  }
-  .project-image{
-    width: 15cm;
-    height: 10;
-    display: flex;
-    justify-content: center;
+  /* Style the project links */
+  .project-link {
+    display: inline-flex;
     align-items: center;
-}
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .project-link i {
+    margin-right: 5px;
+  }
+  
+  .project-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  .project-image {
+    width: 100%;
+    max-width: 200px; /* Reduced max-width for smaller images */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px; /* Centers the image and adds bottom margin */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    object-fit: contain; /* Ensures the entire image is visible without cropping */
+  }
