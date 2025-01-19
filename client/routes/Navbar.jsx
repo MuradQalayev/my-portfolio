@@ -41,9 +41,14 @@ const Navibar = () => {
   return (
     <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="navbar">
       <Container>
-        <Navbar.Brand href="/" className="d-flex justify-content-start">
-          <img src="/favicon.png" style={{ width: '1cm' }} alt="Logo" />
-        </Navbar.Brand>
+      <Navbar.Brand href="/" className="d-flex justify-content-start">
+      <img
+        src="/favicon.png"
+        className='rounded'
+        style={{ width: '1cm', height: '1cm', objectFit: 'cover' }}
+        alt="Logo"
+      />
+    </Navbar.Brand>
 
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
