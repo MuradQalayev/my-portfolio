@@ -1,38 +1,50 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import Lottie from 'lottie-react';
 
-import myPhoto from '../public/22.jpg'; // Replace with your photo
-import aboutAnimation from '../public/about.json'; // Replace with your Lottie animation
-import '../src/About.css'; // CSS for styling
+import '../src/About.css';
 
 const About = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.5 } // Trigger when 50% of the image is in view
+    );
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+
+    return () => {
+      if (imageRef.current) {
+        observer.unobserve(imageRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="about-section">
-      {/* Background Lottie Animation */}
-      <Lottie
-        animationData={aboutAnimation}
-        loop={true}
-        className="about-lottie"
-      />
-
-      {/* Foreground Content (Text & Image) */}
       <Container className="about-content">
         <h1 className="text-center mb-4">About Me</h1>
 
         <Row className="align-items-center">
-          {/* Left Section - Photo */}
           <Col xs={12} md={4} className="text-center mb-4 mb-md-0">
             <Image
-              src={myPhoto}
+              ref={imageRef}
+              src="/22.jpg" // Directly reference image
               alt="Murad Galayev"
-              className="profile-photo"
+              className={`profile-photo ${isVisible ? 'animate-image' : ''}`} // Add animation class when visible
               roundedCircle
               fluid
             />
           </Col>
 
-          {/* Right Section - Text */}
           <Col xs={12} md={8} className="about-text">
             <h2>Hello! I'm <span className="name-highlight">Murad Galayev</span></h2>
             <p>

@@ -1,113 +1,65 @@
+* About.css */
 .about-section {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Ensure it takes full viewport height */
-    overflow: hidden;
-  }
-  
-  .about-lottie {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Keep the animation in the background */
-    object-fit: cover; /* Ensure the animation covers the section fully */
-  }
-  
-  .about-content {
-    position: relative;
-    z-index: 1; /* Ensure content appears above the animation */
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: #fff; /* Make the text stand out against the background */
-  }
-  
-  .profile-photo {
-    width: 200px; /* Default size for large screens */
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+  padding: 50px 15px;
+  color: #350202; /* Text color */
+}
+
+.profile-photo {
+    width: 200px;
     height: 200px;
     border-radius: 50%;
-    object-fit: cover; /* Keep the aspect ratio intact */
+    object-fit: cover;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: width 0.3s ease, height 0.3s ease;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Initial position */
   }
   
-  .about-text {
-    text-align: center;
+  .profile-photo.animate-image {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to normal position */
   }
   
-  .name-highlight {
-    color: #007bff; /* Highlight color for the name */
+
+.about-text {
+  text-align: center;
+}
+
+.name-highlight {
+  color: #007bff; /* Highlight color */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 1rem;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .profile-photo {
+    width: 150px;
+    height: 150px;
   }
-  
-  h2, p {
-    font-size: 1.2rem;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  ul li {
-    font-size: 1rem;
-  }
-  
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Responsive adjustments for smaller screens */
-  @media (max-width: 767px) {
-    .about-content {
-      padding-top: 70px; /* Adjust padding for smaller screens */
-    }
-  
-    .profile-photo {
-      width: 150px; /* Smaller size for mobile */
-      height: 150px; /* Maintain aspect ratio */
-      margin-bottom: 20px;
-    }
-  
-    h2 {
-      font-size: 1.5rem;
-    }
-  
-    p {
-      font-size: 1rem;
-    }
-  
-    ul li {
-      font-size: 0.9rem;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .about-content {
-      padding-top: 50px; /* Adjust padding for very small screens */
-    }
-  
-    .profile-photo {
-      width: 120px; /* Smaller size for small devices */
-      height: 120px;
-      margin-bottom: 20px;
-    }
-  
-    h2 {
-      font-size: 1.2rem;
-    }
-  
-    p {
-      font-size: 0.9rem;
-    }
-  
-    ul li {
-      font-size: 0.8rem;
-    }
-  }
-  
+}
