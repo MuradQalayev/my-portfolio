@@ -4,11 +4,11 @@ import '../src/Motivation.css'; // Import CSS for styling
 const Motivation = () => {
 
   const images = [
-    "../public/smoki1.jpg",
-    "../public/smoki2.jpg",
-    "../public/smoki3.jpg",
-    "../public/smoki4.jpg",
-    "../public/smoki5.jpg" ];
+    "/smoki1.jpg",
+    "/smoki2.jpg",
+    "/smoki3.jpg",
+    "/smoki4.jpg",
+    "/smoki5.jpg" ];
 
   return (
     <div className="motivation-container">
