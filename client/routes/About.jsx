@@ -8,9 +8,13 @@ import '../src/About.css'; // CSS for styling
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-section">
       {/* Background Lottie Animation */}
-      <Lottie animationData={aboutAnimation} loop={true} className="about-lottie" />
+      <Lottie
+        animationData={aboutAnimation}
+        loop={true}
+        className="about-lottie"
+      />
 
       {/* Foreground Content (Text & Image) */}
       <Container className="about-content">
@@ -18,7 +22,7 @@ const About = () => {
 
         <Row className="align-items-center">
           {/* Left Section - Photo */}
-          <Col md={4} className="text-center">
+          <Col xs={12} md={4} className="text-center mb-4 mb-md-0">
             <Image
               src={myPhoto}
               alt="Murad Galayev"
@@ -29,7 +33,7 @@ const About = () => {
           </Col>
 
           {/* Right Section - Text */}
-          <Col md={8} className="about-text">
+          <Col xs={12} md={8} className="about-text">
             <h2>Hello! I'm <span className="name-highlight">Murad Galayev</span></h2>
             <p>
               I’m a passionate <strong>web developer</strong> who loves building sleek,
