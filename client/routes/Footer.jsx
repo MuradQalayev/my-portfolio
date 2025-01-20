@@ -18,9 +18,9 @@ const Footer = () => {
             <h5>License</h5>
             <p>
               This website's content is licensed under a 
-              <a href="LICENSE_CONTENT.md" className="text-white"> 
+              <p className="text-white"> 
                 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
-              </a>.
+              </p>.
             </p>
             <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreferrer">
               <img 
