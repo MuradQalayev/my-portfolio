@@ -20,8 +20,9 @@ const Motivation = () => {
   ];
 
   return (
+    
     <>
-    <h1>My Motivation</h1>
+    <h1 className="text-center mb-5 motiv">My Motivation</h1>
     <Container fluid className="motivation-container">
       
       <div className="motivation-container">
