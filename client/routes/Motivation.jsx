@@ -9,12 +9,21 @@ const Motivation = () => {
     "/smoki1.jpg",
     "/smoki2.jpg",
     "/smoki3.jpg",
-    "/smoki4.jpg",
-    "/smoki5.jpg" ];
+    "/smoki5.jpg",
+    "/books.avif",
+    "/mercedes.png",
+    "/programming.avif",
+    "/roma.avif",
+    "/family.jpg",
+    "/mercedes1.jpeg",
+
+  ];
 
   return (
-    <Container>
-      <h1>My Motivation</h1>
+    <>
+    <h1>My Motivation</h1>
+    <Container fluid className="motivation-container">
+      
       <div className="motivation-container">
       
       {images.map((img, index) => (
@@ -22,7 +31,7 @@ const Motivation = () => {
       ))}
     </div>
     </Container>
-
+    </>
   );
 };
 

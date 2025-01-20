@@ -27,7 +27,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="container">
+    <>
+  <div className="container">
       <div className="row vh-100 d-flex align-items-center">
         
         <div className="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
@@ -46,14 +47,16 @@ const Home = () => {
       <div id='education'>
         <Education/>
       </div>
-      <div id='motivation' className='motivation-section'>
-        <Motivation/>
-      </div>
-      <Lottie className='d-flex justify-content-center ' loop={true} animationData={ComingSoon}/>
-      <div id='projects' className='projects'>
-        <Projects/>
-      </div>      
+          
     </div>
+    <div id='motivation' className='motivation-section'>
+    <Motivation/>
+  </div>
+  <Lottie className='d-flex justify-content-center ' loop={true} animationData={ComingSoon}/>
+  <div id='projects' className='projects'>
+    <Projects/>
+  </div>  
+  </>
   );
 };
 
