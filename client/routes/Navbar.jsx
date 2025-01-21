@@ -39,7 +39,7 @@ const Navibar = () => {
   };
 
   return (
-    <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="navbar fixed-top">
+    <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="navbar">
       <Container>
       <Navbar.Brand href="/" className="d-flex justify-content-start">
       <img
