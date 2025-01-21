@@ -30,7 +30,6 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Add more columns if needed */}
         </div>
         <hr className="bg-light my-3" /> 
         <div className="text-center">
