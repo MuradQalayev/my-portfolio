@@ -14,6 +14,16 @@
     -webkit-text-fill-color: transparent;
     animation: rainbow-animation 2s ease infinite;
   }
+.navbar .nav-link {
+  text-decoration: none; 
+  transition: color 0.3s ease, text-decoration 0.3s ease; 
+}
+
+.navbar .nav-link:hover {
+  text-decoration: none; 
+  color: white; 
+}
+
   
   @keyframes rainbow-animation {
     0% {
