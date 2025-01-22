@@ -73,9 +73,10 @@ const Projects = () => {
             <div className="card-body">
               <div className="project-content">
                 <img 
-                  src="/kiruna.png"  
-                  alt="Kiruna Project" 
+                  src="/kiruna.gif" 
+                  alt="Office Queue Project Demo" 
                   className="project-image"
+                  
                 />
 
                 <p className="project-description">
