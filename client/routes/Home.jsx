@@ -47,15 +47,14 @@ const Home = () => {
       <div id='education'>
         <Education/>
       </div>
-          
+      <div id='projects' className='projects'>
+        <Projects/>
+      </div>  
     </div>
     <div id='motivation' className='motivation-section'>
     <Motivation/>
   </div>
   <Lottie className='d-flex justify-content-center ' loop={true} animationData={ComingSoon}/>
-  <div id='projects' className='projects'>
-    <Projects/>
-  </div>  
   </>
   );
 };
