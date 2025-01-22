@@ -10,8 +10,7 @@ import maintenance from '../public/maintenance.json'
 import startApp from '../public/Animation - 1737228672828.json'; 
 import '../src/App.css'
 import Footer from '../routes/Footer';
-import { SpeedInsights } from '@vercel/speed-insights/react';
-
+import { Analytics } from '@vercel/analytics/react';
 
   const App = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -44,11 +43,7 @@ import { SpeedInsights } from '@vercel/speed-insights/react';
               </Routes>
             }
             <Footer/>
-            <SpeedInsights 
-        url="https://galayevmurad.site/" // Your fixed URL
-        strategy="desktop" // or "mobile"
-        key="speed-insights" // Static key since no path changes
-      />
+            <Analytics />
       </BrowserRouter>
     );
   };
