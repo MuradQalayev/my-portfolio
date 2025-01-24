@@ -7,24 +7,35 @@ import Motivation from './Motivation';
 import ComingSoon from '../public/coming soon.json'
 import Projects from './Projects';
 import Education from './Education';
+import { FaArrowUp } from 'react-icons/fa';
+
+
 
 
 
 const Home = () => {
-
+  const [showScrollTop, setShowScrollTop] = useState(false); 
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {  
-        setShowImage(true);
+        setShowScrollTop(true);
       } else {
-        setShowImage(false);
+        setShowScrollTop(false);
       }
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' 
+    });
+  };
+
 
   return (
     <>
@@ -55,6 +66,13 @@ const Home = () => {
     <Motivation/>
   </div>
   <Lottie className='d-flex justify-content-center ' loop={true} animationData={ComingSoon}/>
+  <button 
+        className={`scroll-to-top-btn ${showScrollTop ? 'show' : ''}`}
+        onClick={scrollToTop}
+        aria-label="Scroll to top"
+      >
+        <FaArrowUp className="icon" />
+      </button>
   </>
   );
 };
