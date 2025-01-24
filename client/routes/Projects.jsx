@@ -120,7 +120,7 @@ const Projects = () => {
           <div className="card-header">
             <h5 className="mb-0">
               <button className="btn btn-link project-btn" onClick={() => handleToggle(3)}>
-                <i className="bi bi-rocket-takeoff-fill"></i> Project #3 - Quizz App
+                <i className="bi bi-rocket-takeoff-fill"></i> Project #3 - Quiz App
               </button>
             </h5>
           </div>
