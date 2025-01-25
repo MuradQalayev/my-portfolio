@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Container, Row, Col, Image, Carousel } from 'react-bootstrap';
-import '../src/About.css';
+import '../styles/About.css';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);

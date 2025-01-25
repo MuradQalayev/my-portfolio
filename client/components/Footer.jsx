@@ -20,7 +20,7 @@ const Footer = () => {
               This website's content is licensed under a 
               <p className="text-white"> 
                 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
-              </p>.
+              </p>
             </p>
             <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreferrer">
               <img 

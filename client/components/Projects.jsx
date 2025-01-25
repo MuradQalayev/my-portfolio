@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../src/Projects.css';
+import '../styles/Projects.css';
 
 const Projects = () => {
   const [openProject, setOpenProject] = useState(2); // Default to "Kiruna Explorer" (ID 2)
@@ -209,7 +209,7 @@ const Projects = () => {
             <div className="card-body">
               <div className="project-content">
                 <img 
-                  src="/portfolio.png" 
+                  src="/myportfolio.gif" 
                   alt="My portfolio project" 
                   className="project-image"
                 />

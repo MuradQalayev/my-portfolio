@@ -2,14 +2,12 @@ import React, { useState, useEffect } from 'react';
 import Lottie from 'lottie-react';
 import '../src/App.css'; 
 import homePageAnimation from '../public/frontend.json';
-import About from './About';
-import Motivation from './Motivation';
 import ComingSoon from '../public/coming soon.json'
-import Projects from './Projects';
-import Education from './Education';
 import { FaArrowUp } from 'react-icons/fa';
-
-
+import About from '../components/About.jsx';
+import Motivation from '../components/Motivation.jsx';
+import Projects from '../components/Projects.jsx';
+import Education from '../components/Education.jsx';
 
 
 

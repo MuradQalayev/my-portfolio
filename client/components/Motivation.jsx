@@ -1,5 +1,5 @@
 import React from 'react';
-import '../src/Motivation.css'; 
+import '../styles/Motivation.css'; 
 import { Container } from 'react-bootstrap';
 
 

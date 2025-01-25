@@ -4,13 +4,13 @@ import Lottie from 'lottie-react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
-import Home from '../routes/Home';
-import Navibar from '../routes/Navbar';
+import Home from '../components/Home.jsx';
+import Navibar from '../components/Navbar.jsx';
 import maintenance from '../public/maintenance.json'
 import startApp from '../public/Animation - 1737228672828.json'; 
-import '../src/App.css'
-import Footer from '../routes/Footer';
+import Footer from '../components/Footer.jsx';
 import { Analytics } from '@vercel/analytics/react';
+import '../src/App.css'
 
   const App = () => {
     const [isLoading, setIsLoading] = useState(true);

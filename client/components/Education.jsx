@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import '../src/Education.css'
-import azii from '../public/azii.png'
-import polito from '../public/polito.png'
+import '../styles/Education.css'
+import azii from '/azii.png'
+import polito from '/polito.png'
 
 const Education = () => {
   const educationData = [
