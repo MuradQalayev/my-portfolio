@@ -11,6 +11,8 @@ import startApp from '../public/Animation - 1737228672828.json';
 import Footer from '../components/Footer.jsx';
 import { Analytics } from '@vercel/analytics/react';
 import '../src/App.css'
+import 'typeface-roboto';
+
 
   const App = () => {
     const [isLoading, setIsLoading] = useState(true);
