@@ -31,11 +31,11 @@ const Navibar = () => {
 
   return (
     <Navbar
-      ref={navRef} // Attach the ref here
+      ref={navRef} 
       bg="dark"
       data-bs-theme="dark"
       expand="lg"
-      expanded={toggleClicked} // Use expanded instead of in
+      expanded={toggleClicked} 
       className="navbar"
     >
       <Container>

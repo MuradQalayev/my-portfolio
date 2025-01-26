@@ -1,12 +1,12 @@
 .motivation-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #cfa8ac, #5a2f35); 
+    background: linear-gradient(to bottom, #ffffff, #ffffff); 
   }
   
   .bubble {
