@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Lottie from 'lottie-react';
 import '../src/App.css'; 
 import homePageAnimation from '../public/frontend.json';
-import ComingSoon from '../public/coming soon.json'
 import { FaArrowUp } from 'react-icons/fa';
 import About from '../components/About.jsx';
 import Motivation from '../components/Motivation.jsx';
@@ -63,7 +62,6 @@ const Home = () => {
     <div id='motivation' className='motivation-section'>
     <Motivation/>
   </div>
-  <Lottie className='d-flex justify-content-center ' loop={true} animationData={ComingSoon}/>
   <button 
         className={`scroll-to-top-btn ${showScrollTop ? 'show' : ''}`}
         onClick={scrollToTop}
