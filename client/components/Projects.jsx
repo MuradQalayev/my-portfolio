@@ -285,7 +285,7 @@ const Projects = () => {
             <h5 className="mb-0">
               <button
                 className="btn btn-link project-btn"
-                onClick={() => handleToggle(5)}
+                onClick={() => handleToggle(6)}
               >
                 <i className="bi bi-rocket-takeoff-fill"></i> Project #6 -
                 Weatherly Learn
