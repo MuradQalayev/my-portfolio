@@ -299,8 +299,8 @@ const Projects = () => {
             <div className="card-body">
               <div className="project-content">
                 <img
-                  src="/myportfolio.gif"
-                  alt="My portfolio project"
+                  src="/weather.gif"
+                  alt="Weather Learn"
                   className="project-image"
                 />
 
